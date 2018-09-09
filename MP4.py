@@ -31,10 +31,10 @@ kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u874a7502c02896b2edbb3445c2615d35"]
-owner = ["u874a7502c02896b2edbb3445c2615d35"]
-admin = ["u874a7502c02896b2edbb3445c2615d35"]
-staff = ["u874a7502c02896b2edbb3445c2615d35"]
+creator = ["ue1d6a794435130d139f9c5dde19aa9e5","u4862fe4b182b2fd194a3108e2f3662e8"]
+owner = ["ue1d6a794435130d139f9c5dde19aa9e5"]
+admin = ["ue1d6a794435130d139f9c5dde19aa9e5","u4862fe4b182b2fd194a3108e2f3662e8"]
+staff = ["ue1d6a794435130d139f9c5dde19aa9e5"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -1885,23 +1885,23 @@ def bot(op):
                                    aditmadzs.sendMessage(msg.to, "Nama : "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
 
 #===========BOT UPDATE============#
-                        elif cmd == "ditup":
+                        elif cmd == "upfoto":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 Setmain["ADITMADZSfoto"][mid] = True
                                 aditmadzs.sendMessage(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "dit1up":
+                        elif cmd == "1up":
                             if msg._from in admin:
                                 Setmain["ADITMADZSfoto"][Amid] = True
                                 ki.sendMessage(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "dit2up":
+                        elif cmd == "2up":
                             if msg._from in admin:
                                 Setmain["ADITMADZSfoto"][Bmid] = True
                                 kk.sendMessage(msg.to,"Kirim fotonya.....")
                                 
-                        elif cmd == "dit3up":
+                        elif cmd == "3up":
                             if msg._from in admin:
                                 Setmain["ADITMADZSfoto"][Cmid] = True
                                 kc.sendMessage(msg.to,"Kirim fotonya.....")
@@ -1916,7 +1916,7 @@ def bot(op):
                                 aditmadzs.updateProfile(profile)
                                 aditmadzs.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("dit1name: "):
+                        elif cmd.startswith("1name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -1926,7 +1926,7 @@ def bot(op):
                                 ki.updateProfile(profile)
                                 ki.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("dit2name: "):
+                        elif cmd.startswith("2name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -1936,7 +1936,7 @@ def bot(op):
                                 kk.updateProfile(profile)
                                 kk.sendMessage(msg.to,"Nama diganti jadi " + string + "")
 
-                        elif cmd.startswith("dit3name: "):
+                        elif cmd.startswith("3name: "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2000,6 +2000,22 @@ def bot(op):
                                    for m in range (80, len(nama)-1):
                                        nm5 += [nama[m]]
                                    mentionMembers(msg.to, nm4)
+
+                        elif cmd == "tag":
+                          if wait["selfbot"] == True:
+                            group = cl.getGroup(msg.to)
+                            nama = [contact.mid for contact in group.members]
+                            k = len(nama)//20
+                            for a in range(k+1):
+                                txt = u''
+                                s=0
+                                b=[]
+                                for i in group.members[a*20 : (a+1)*20]:
+                                    b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                                    s += 7
+                                    txt += u'@Alin \n'
+                                cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                                cl.sendMessage(to, "Hello {} Mention".format(str(len(nama)))) 
 
                         elif cmd == "listbot":
                           if wait["selfbot"] == True:
@@ -2075,14 +2091,14 @@ def bot(op):
                                     me += str(e) + ". " +aditmadzs.getGroup(group).name + "\n"                                    
                                 aditmadzs.sendMessage(msg.to,"»» Aditmadzs Protect\n\n»» PROTECT URL :\n"+ma+"\n»» PROTECT KICK :\n"+mb+"\n»» PROTECT JOIN :\n"+md+"\n»» PROTECT CANCEL:\n"+mc+"\n»» PROTECT INVITE :\n"+me+"\nTotal「%s」Protect yang aktif" %(str(len(protectqr)+len(protectkick)+len(protectjoin)+len(protectcancel)+len(protectinvite))))
 
-                        elif cmd == "respon":
+                        elif cmd == "check":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 ki.sendMessage(msg.to,responsename1)
                                 kk.sendMessage(msg.to,responsename2)
                                 kc.sendMessage(msg.to,responsename3)
     
-                        elif cmd == "join dit":
+                        elif cmd == "alljoin":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = aditmadzs.getGroup(msg.to)
@@ -2098,7 +2114,7 @@ def bot(op):
                                 G.preventedJoinByTicket = True
                                 kc.updateGroup(G)
 
-                        elif cmd == "bye dit":
+                        elif cmd == "allbye":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = aditmadzs.getGroup(msg.to)
@@ -2129,12 +2145,24 @@ def bot(op):
                                contact = aditmadzs.getProfile()
                                mids = [contact.mid]
                                name = "{}".format(str(contact.displayName))
-                               url = 'https://line.me/ti/p/~adit_cmct'
+                               url = 'https://line.me/ti/p/~max_pv'
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(contact.pictureStatus))
                                text = "Waiting...."
                                sendMentionV10(msg.to, str(text), str(name), str(url), str(iconlink))
                                aditmadzs.sendMessage(msg.to,format(str(elapsed_time)))
 
+                        elif cmd == "speedbot" or cmd == "spb":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               start = time.time()
+                               ki.sendMessage(msg.to, "Progres speed...")
+                               elapsed_time = time.time() - start
+                               ki.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+                               elapsed_time = time.time() - start
+                               kk.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+                               elapsed_time = time.time() - start
+                               kc.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
+  
                         elif cmd == "cctv on":
                           if wait["selfbot"] == True:
                                  tz = pytz.timezone("Asia/Jakarta")
@@ -2472,7 +2500,7 @@ def bot(op):
                                     aditmadzs.sendMessage(msg.to, "「Dinonaktifkan」\n" + msgs)
 
 #===========KICKOUT============#
-                        elif ("Kick " in msg.text):
+                        elif ("Go " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
