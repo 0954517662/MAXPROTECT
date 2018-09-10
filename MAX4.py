@@ -383,8 +383,8 @@ def help():
 ╠ ✯͜͡❂Status
 ╠ ✯͜͡❂Sider「on/off」
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═ CREATOR:MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage
     
@@ -428,8 +428,8 @@ def helpcreator():
 ╠ ✯͜͡❂Mykey
 ╠ ✯͜͡❂Resetkey
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═CREATOR: MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage1
 
@@ -450,8 +450,8 @@ def helpblacklist():
 ╠ ✯͜͡❂Unban「@」
 ╠ ✯͜͡❂Unban:on
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═ CREATOR: MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage3
 
@@ -478,8 +478,8 @@ def helpadmin():
 ╠ ✯͜͡❂Staffadd「@」
 ╠ ✯͜͡❂Staffdell「@」
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═ CREATOR: MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage4
     	
@@ -501,8 +501,8 @@ def helpsetting():
 ╠ ✯͜͡❂Unsend「on/off」
 ╠ ✯͜͡❂Welcome「on/off」
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═ CREATOR: MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage5
     
@@ -525,8 +525,8 @@ def helpprotect():
 ╠ ✯͜͡❂Protectcancel「on/off」
 ╠ ✯͜͡❂Protectinvite「on/off」
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═CREATOR: MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage6
 	
@@ -562,8 +562,8 @@ def helpbot():
 ╠ ✯͜͡❂Stealvideoprofile「@」
 ╠ ✯͜͡❂Tagall
 ╠══════════════════
-╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
-╚═ CREATOR: MAXSY
+╠ ✯͜͡❂ CREATOR:MAXSY
+╚══════════════════
 """
     return helpMessage8
 
