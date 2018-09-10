@@ -9,22 +9,26 @@ from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-aditmadzs = LineClient(authToken='TOKEN LU')
+aditmadzs = LineClient()
+#aditmadzs = LineClient(authToken='TOKEN LU')
 aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
 channel = LineChannel(aditmadzs)
 aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='TOKEN LU')
+ki = LineClient()
+#ki = LineClient(authToken='TOKEN LU')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='TOKEN LU')
+kk = LineClient()
+#kk = LineClient(authToken='TOKEN LU')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='TOKEN LU')
+kc = LineClient()
+#kc = LineClient(authToken='TOKEN LU')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
@@ -368,11 +372,12 @@ def help():
 ╠ ✯͜͡❂Cctv「on/off」
 ╠ ✯͜͡❂Creator
 ╠ ✯͜͡❂Cyduk
-╠ ✯͜͡❂Help admin
-╠ ✯͜͡❂Help blacklist
-╠ ✯͜͡❂Help bot
-╠ ✯͜͡❂Help creator
-╠ ✯͜͡❂Help setting
+╠ ✯͜͡❂Help2
+╠ ✯͜͡❂Help3
+╠ ✯͜͡❂Help4
+╠ ✯͜͡❂Help5
+╠ ✯͜͡❂Help6
+╠ ✯͜͡❂Help7
 ╠ ✯͜͡❂Listbot
 ╠ ✯͜͡❂Listadmin
 ╠ ✯͜͡❂Status
@@ -430,129 +435,135 @@ def helpcreator():
 def helpblacklist():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage3 = "╭══════════════════════════" + "\n" + \
-                  "║»»═══════ Aditmadzs ════════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»═════ Help Blacklist ══════" + "\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»»═══════ List Menu ═══════" + "\n" + \
-                  "║»» " + key + "Banlist\n" + \
-				  "║»» " + key + "Ban:on\n" + \
-                  "║»» " + key + "Blc\n" + \
-				  "║»» " + key + "Clearban\n" + \
-				  "║»» " + key + "Refresh\n" + \
-				  "║»» " + key + "Unban「@」\n" + \
-				  "║»» " + key + "Unban:on\n" + \
-				  "║»══════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage3 = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help Blacklist
+╠══════════════════
+╠ ✯͜͡❂Banlist
+╠ ✯͜͡❂Ban:on
+╠ ✯͜͡❂Blc
+╠ ✯͜͡❂Clearban
+╠ ✯͜͡❂Refresh
+╠ ✯͜͡❂Unban「@」
+╠ ✯͜͡❂Unban:on
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═ CREATOR: MAXSY
+"""
     return helpMessage3
 
 def helpadmin():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage4 = "╭══════════════════════════" + "\n" + \
-                  "║»»═══════ Aditmadzs ════════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»═════ Help Admin ══════" + "\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»»═══════ List Menu ═══════" + "\n" + \
-                  "║»» " + key + "Admin:on\n" + \
-                  "║»» " + key + "Admin:repeat\n" + \
-                  "║»» " + key + "Adminadd「@」\n" + \
-                  "║»» " + key + "Admindell「@」\n" + \
-				  "║»» " + key + "Bot:on\n" + \
-                  "║»» " + key + "Bot:repeat\n" + \
-				  "║»» " + key + "Botadd「@」\n" + \
-                  "║»» " + key + "Botdell「@」\n" + \
-				  "║»» " + key + "Refresh\n" + \
-				  "║»» " + key + "Staff:on\n" + \
-                  "║»» " + key + "Staff:repeat\n" + \
-                  "║»» " + key + "Staffadd「@」\n" + \
-                  "║»» " + key + "Staffdell「@」\n" + \
-                  "║»═══════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage4 = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help Admin
+╠══════════════════
+╠ ✯͜͡❂Admin:on
+╠ ✯͜͡❂Admin:repeat
+╠ ✯͜͡❂Adminadd「@」
+╠ ✯͜͡❂Admindell「@」
+╠ ✯͜͡❂Bot:on
+╠ ✯͜͡❂Bot:repeat
+╠ ✯͜͡❂Botadd「@」
+╠ ✯͜͡❂Botdell「@」
+╠ ✯͜͡❂Refresh
+╠ ✯͜͡❂Staff:on
+╠ ✯͜͡❂Staff:repeat
+╠ ✯͜͡❂Staffadd「@」
+╠ ✯͜͡❂Staffdell「@」
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═ CREATOR: MAXSY
+"""
     return helpMessage4
     	
 def helpsetting():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage5 = "╭══════════════════════════" + "\n" + \
-                  "║»»═══════ Aditmadzs ════════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»═════ Help Setting ══════" + "\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»»═══════ List Menu ═══════" + "\n" + \
-                  "║»» " + key + "Autoadd「on/off」\n" + \
-				  "║»» " + key + "Autojoin「on/off」\n" + \
-				  "║»» " + key + "Autoleave「on/off」\n" + \
-				  "║»» " + key + "Contact「on/off」\n" + \
-				  "║»» " + key + "Jointicket「on/off」\n" + \
-				  "║»» " + key + "Respon「on/off」\n" + \
-				  "║»» " + key + "Unsend「on/off」\n" + \
-                  "║»» " + key + "Welcome「on/off」\n" + \
-                  "║»═══════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage5 = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help Setting 
+╠══════════════════
+╠ ✯͜͡❂Autoadd「on/off」
+╠ ✯͜͡❂Autojoin「on/off」
+╠ ✯͜͡❂Autoleave「on/off」
+╠ ✯͜͡❂Contact「on/off」
+╠ ✯͜͡❂Jointicket「on/off」
+╠ ✯͜͡❂Respon「on/off」
+╠ ✯͜͡❂Unsend「on/off」
+╠ ✯͜͡❂Welcome「on/off」
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═ CREATOR: MAXSY
+"""
     return helpMessage5
     
 def helpprotect():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage6 = "╭══════════════════════════" + "\n" + \
-                  "║»»═══════ Aditmadzs ════════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»═════ Help Protect ══════" + "\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»»═══════ List Menu ═══════" + "\n" + \
-				  "║»» " + key + "Join dit\n" + \
-				  "║»» " + key + "Ditpro 「on/off」\n" + \
-                  "║»» " + key + "Notag「on/off」\n" + \
-                  "║»» " + key + "Protecturl「on/off」\n" + \
-                  "║»» " + key + "Protectjoin「on/off」\n" + \
-                  "║»» " + key + "Protectkick「on/off」\n" + \
-                  "║»» " + key + "Protectcancel「on/off」\n" + \
-                  "║»» " + key + "Protectinvite「on/off」\n" + \
-				  "║»═══════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage6 = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help Protect
+╠══════════════════
+╠ ✯͜͡❂Alljoin
+╠ ✯͜͡❂Allbye
+╠ ✯͜͡❂Allpro 「on/off」
+╠ ✯͜͡❂Notag「on/off」
+╠ ✯͜͡❂Protecturl「on/off」
+╠ ✯͜͡❂Protectjoin「on/off」
+╠ ✯͜͡❂Protectkick「on/off」
+╠ ✯͜͡❂Protectcancel「on/off」
+╠ ✯͜͡❂Protectinvite「on/off」
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═CREATOR: MAXSY
+"""
     return helpMessage6
 	
 def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage8 = "╭══════════════════════════" + "\n" + \
-                  "║»»═══════ Aditmadzs ════════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»═════ Help BOT ══════" + "\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»»═══════ List Menu ═══════" + "\n" + \
-                  "║»» " + key + "About\n" + \
-				  "║»» " + key + "Close\n" + \
-				  "║»» " + key + "Ginfo\n" + \
-				  "║»» " + key + "Gruplist\n" + \
-				  "║»» " + key + "Info 「@」\n" + \
-				  "║»» " + key + "「@」Kick\n" + \
-				  "║»» " + key + "Me\n" + \
-                  "║»» " + key + "Mid「@」\n" + \
-				  "║»» " + key + "Mybot\n" + \
-                  "║»» " + key + "Mymid\n" + \
-				  "║»» " + key + "Open\n" + \
-				  "║»» " + key + "Respon\n" + \
-				  "║»» " + key + "Restart\n" + \
-				  "║»» " + key + "Runtime\n" + \
-				  "║»» " + key + "Speed/Sp\n" + \
-                  "║»» " + key + "Sprespon\n" + \
-				  "║»» " + key + "Stealname「@」\n" + \
-                  "║»» " + key + "Stealbio「@」\n" + \
-                  "║»» " + key + "Stealcover「@」\n" + \
-				  "║»» " + key + "Stealpicture「@」\n" + \
-                  "║»» " + key + "Stealvideoprofile「@」\n" + \
-                  "║»» " + key + "Tagall\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage8 = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help BOT 
+╠══════════════════
+╠ ✯͜͡❂About
+╠ ✯͜͡❂Close
+╠ ✯͜͡❂Ginfo
+╠ ✯͜͡❂Gruplist
+╠ ✯͜͡❂Info 「@」
+╠ ✯͜͡❂Go「@」
+╠ ✯͜͡❂Me
+╠ ✯͜͡❂Mid「@」
+╠ ✯͜͡❂Mybot
+╠ ✯͜͡❂Mymid
+╠ ✯͜͡❂Open
+╠ ✯͜͡❂Respon
+╠ ✯͜͡❂Restart
+╠ ✯͜͡❂Runtime
+╠ ✯͜͡❂Speed/Sp
+╠ ✯͜͡❂Spb
+╠ ✯͜͡❂Stealname「@」
+╠ ✯͜͡❂Stealbio「@」
+╠ ✯͜͡❂Stealcover「@」
+╠ ✯͜͡❂Stealpicture「@」
+╠ ✯͜͡❂Stealvideoprofile「@」
+╠ ✯͜͡❂Tagall
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═ CREATOR: MAXSY
+"""
     return helpMessage8
 
 def bot(op):
@@ -1446,7 +1457,7 @@ def bot(op):
                                 wait["selfbot"] = False
                                 aditmadzs.sendMessage(msg.to, "Selfbot dinonaktifkan")
                                             
-                        elif cmd == "help creator":
+                        elif cmd == "help2":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage1 = helpcreator()
@@ -1456,7 +1467,7 @@ def bot(op):
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage1), str(name), str(url), str(iconlink))
 
-                        elif cmd == "help admin":
+                        elif cmd == "help3":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage4 = helpadmin()
@@ -1466,7 +1477,7 @@ def bot(op):
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage4), str(name), str(url), str(iconlink))
                                
-                        elif cmd == "help setting":
+                        elif cmd == "help4":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage5 = helpsetting()
@@ -1476,7 +1487,7 @@ def bot(op):
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage5), str(name), str(url), str(iconlink))                      
 
-                        elif cmd == "help protect":
+                        elif cmd == "help5":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage6 = helpprotect()
@@ -1486,7 +1497,7 @@ def bot(op):
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage6), str(name), str(url), str(iconlink))
 
-                        elif cmd == "help bot":
+                        elif cmd == "help6":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage8 = helpbot()
@@ -1496,7 +1507,7 @@ def bot(op):
                                iconlink = 'http://dl.profile.line-cdn.net/{}'.format(str(ma.pictureStatus))
                                sendMentionV10(msg.to, str(helpMessage8), str(name), str(url), str(iconlink))
 
-                        elif cmd == "help blacklist":
+                        elif cmd == "help7":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                helpMessage3 = helpblacklist()
