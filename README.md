@@ -3,10 +3,10 @@
 ----
 # [ADD ME!](http://line.me/ti/p/~max_pv)
 # Ambil Token Bisa Di
-# 【さัএπัஞ✵ບิथℓℓҨतΩ】(http://line.me/ti/p/~max_pv)
-# 【さัএπัஞ✵ບิथℓℓҨतΩ】(http://line.me/ti/p/~self_js)
-# 【さัএπัஞ✵ບิथℓℓҨतΩ】(http://line.me/ti/p/~max_pv)
-# 【さัএπัஞ✵ບิथℓℓҨतΩ】(http://line.me/ti/p/~self_js)
+# MAX(http://line.me/ti/p/~max_pv)
+# MAX(http://line.me/ti/p/~self_js)
+# MAX(http://line.me/ti/p/~max_pv)
+# MAX(http://line.me/ti/p/~self_js)
 
 # Termux
 
