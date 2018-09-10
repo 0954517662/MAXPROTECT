@@ -8,6 +8,8 @@ import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subpr
 from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
+from googletrans import Translator
+import youtube_dl
 
 aditmadzs = LineClient()
 #aditmadzs = LineClient(authToken='TOKEN LU')
