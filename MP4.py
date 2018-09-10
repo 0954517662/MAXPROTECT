@@ -1590,7 +1590,7 @@ def bot(op):
                                msg.contentMetadata = {'mid': msg._from}
                                aditmadzs.sendMessage1(msg)
 
-                       elif text.lower() == "mid":
+                        elif text.lower() == "mid":
                                cl.sendMessage(msg.to, msg._from)
 
                         elif text.lower() == "mymid":
