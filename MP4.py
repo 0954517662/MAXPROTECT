@@ -359,26 +359,27 @@ def command(text):
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "╭═══════════════════════════" + "\n" + \
-                  "║»»═══════ Aditmadzs ════════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»═════ Help Message ══════" + "\n" + \
-                  "║»══════════════════════════" + "\n" + \
-                  "║»»════════ List Menu ════════" + "\n" + \
-                  "║»» " + key + "Cctv「on/off」\n" + \
-				  "║»» " + key + "Creator\n" + \
-				  "║»» " + key + "Cyduk\n" + \
-				  "║»» " + key + "Help admin\n" + \
-				  "║»» " + key + "Help blacklist\n" + \
-				  "║»» " + key + "Help bot\n" + \
-                  "║»» " + key + "Help creator\n" + \
-				  "║»» " + key + "Help setting\n" + \
-                  "║»» " + key + "Listbot\n" + \
-                  "║»» " + key + "Listadmin\n" + \
-				  "║»» " + key + "Status\n" + \
-				  "║»════════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help Message 
+╠══════════════════
+╠ ✯͜͡❂Cctv「on/off」
+╠ ✯͜͡❂Creator
+╠ ✯͜͡❂Cyduk
+╠ ✯͜͡❂Help admin
+╠ ✯͜͡❂Help blacklist
+╠ ✯͜͡❂Help bot
+╠ ✯͜͡❂Help creator
+╠ ✯͜͡❂Help setting
+╠ ✯͜͡❂Listbot
+╠ ✯͜͡❂Listadmin
+╠ ✯͜͡❂Status
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═ CREATOR:MAXSY
+"""
     return helpMessage
     
     
@@ -386,45 +387,44 @@ def help():
 def helpcreator():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "╭═════════════════════════" + "\n" + \
-                  "║»»══════ Aditmadzs ════════" + "\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»»══════ Help BOT ═══════" + "\n" + \
-                  "║»════════════════════════" + "\n" + \
-                  "║»»══════ List Menu ══════" + "\n" + \
-                  "║»» " + key + "Cek spam\n" + \
-                  "║»» " + key + "Cek pesan\n" + \
-                  "║»» " + key + "Cek respon\n" + \
-                  "║»» " + key + "Cek welcome\n" + \
-                  "║»» " + key + "Cek leave\n" + \
-                  "║»» " + key + "Set spam:「Text」\n" + \
-                  "║»» " + key + "Set pesan:「Text」\n" + \
-                  "║»» " + key + "Set respon:「Text」\n" + \
-                  "║»» " + key + "Set welcome:「Text」\n" + \
-                  "║»» " + key + "Set leave:「Text」\n" + \
-                  "║»» " + key + "Ditname:「Name」\n" + \
-                  "║»» " + key + "Dit1name:「Name」\n" + \
-                  "║»» " + key + "Dit2name:「Name」\n" + \
-                  "║»» " + key + "Ditname:「Name」\n" + \
-				  "║»» " + key + "Dit3name:「Name」\n" + \
-                  "║»» " + key + "Dit1up「Foto」\n" + \
-                  "║»» " + key + "Dit2up「Foto」\n" + \
-                  "║»» " + key + "Dit3up「Foto」\n" + \
-				  "║»» " + key + "Dit4up「Foto」\n" + \
-                  "║»» " + key + "Gift:「Mid」「Jumlah」\n" + \
-                  "║»» " + key + "Spam:「Mid」「Jumlah」\n" + \
-				  "║»» " + key + "Spamtag:「jumlahnya」\n" + \
-                  "║»» " + key + "Spamtag「@」\n" + \
-                  "║»» " + key + "Spamcall:「jumlahnya」\n" + \
-                  "║»» " + key + "Spamcall\n" + \
-                  "║»» " + key + "Broadcast:「Text」\n" + \
-                  "║»» " + key + "Setkey「New Key」\n" + \
-                  "║»» " + key + "Mykey\n" + \
-                  "║»» " + key + "Resetkey\n" + \
-				  "║»» " + key + "Self「on/off」\n" + \
-                  "║»═════════════════════════" + "\n" + \
-                  "║»══ http://line.me/ti/p/~adit_cmct" + "\n" + \
-                  "╰═════ CREATOR: ©Aditmadzs™"
+    helpMessage1 = """╔══════════════════
+╠ ✯͜͡❂【さัএπัஞ✵ບิथℓℓҨतΩ】
+╚══════════════════
+╔══════════════════
+╠ ✯͜͡❂ Help Bot
+╠══════════════════
+╠ ✯͜͡❂Cek spam
+╠ ✯͜͡❂Cek pesan
+╠ ✯͜͡❂Cek respon
+╠ ✯͜͡❂Cek welcome
+╠ ✯͜͡❂Cek leave
+╠ ✯͜͡❂Set spam:「ข้อความ」
+╠ ✯͜͡❂Set pesan:「ข้อความ」
+╠ ✯͜͡❂Set respon:「ข้อความ」
+╠ ✯͜͡❂Set welcome:「ข้อความ」
+╠ ✯͜͡❂Set leave:「ข้อความ」
+╠ ✯͜͡❂name:「ชื่อ」
+╠ ✯͜͡❂1name:「ชื่อ」
+╠ ✯͜͡❂2name:「ชื่อ」
+╠ ✯͜͡❂3name:「ชื่อ」
+╠ ✯͜͡❂upfoto「รูป」
+╠ ✯͜͡❂1up「รูป」
+╠ ✯͜͡❂2up「รูป」
+╠ ✯͜͡❂3up「รูป」
+╠ ✯͜͡❂Gift:「Mid」「Jumlah」
+╠ ✯͜͡❂Spam:「Mid」「Jumlah」
+╠ ✯͜͡❂Spamtag:「จำนวน」
+╠ ✯͜͡❂Spamtag「@」
+╠ ✯͜͡❂Spamcall:「จำนวน」
+╠ ✯͜͡❂Spamcall
+╠ ✯͜͡❂Broadcast:「ข้อความ」
+╠ ✯͜͡❂Setkey「ข้อความ」
+╠ ✯͜͡❂Mykey
+╠ ✯͜͡❂Resetkey
+╠══════════════════
+╠ ✯͜͡❂ http://line.me/ti/p/~max_pv
+╚═CREATOR: MAXSY
+"""
     return helpMessage1
 
 def helpblacklist():
